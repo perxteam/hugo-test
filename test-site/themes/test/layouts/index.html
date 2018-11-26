@@ -1,0 +1,18 @@
+{{ partial "header.html" . }}
+
+<section id=content>
+  <h3>Тут должен быть список постов (posts): ⤵</h3>
+  <ul class=posts_listing>
+    {{ range (where .Pages "Type" "posts") }}
+      <li>
+        <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+        <div id=date>
+          <time>{{ .Date.Format (.Site.Params.dateform | default "January 2006") }}</time>
+        </div>
+      </li>
+    {{ end }}
+  </ul>
+</section>
+
+{{ partial "footer.html" . }}
+

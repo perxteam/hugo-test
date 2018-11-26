@@ -1,0 +1,9 @@
+baseurl = "https://www.example.com/"
+title = "Тестовый сайт"
+canonifyurls = true
+languagecode = "ru"
+theme = "test"
+
+[params]
+  sitename = "Тестовый сайт"
+  disableWebFonts = false
