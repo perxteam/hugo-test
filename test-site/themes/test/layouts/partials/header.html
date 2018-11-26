@@ -40,7 +40,8 @@
       <h3>Тут должны быть ссылки на страницы (главное меню): ⤵</h3>
       <ul>
         {{ range .Site.Menus.main }}
-          <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+          <li><a href="/content/post1">{{ .Name }}</a></li>
+          <li><a href="/content/about/">О компании</a></li>
         {{ end }}
       </ul>
     </section>
